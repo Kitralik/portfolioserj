@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Destroy the bricks</h1>
+    <div class="start" id="start">
+        <button class="btn" onclick="startgame()">Start Game</button>
+        <button class="btn opt" onclick="options()">Options</button>
+    </div>
+    <div class="option" id="opt">
+        <div id="blocks">
+            <div>
+                <h2>Уровень сложности:</h2>
+                <select class="dif" id="dif" >
+                    <option value="1">Тапок</option>
+                    <option value="2">Начальный сандаль</option>
+                    <option value="3">Плох?</option>
+                    <option value="4">Неплох</option>
+                    <option value="5">Ультрасупердупермегахарош</option>
+                </select>  
+
+            </div>
+           <div>
+            <h2>Цвет интрефейса игры:</h2>
+        <input type="color" id="game_color" value="lawngreen" class="color">
+       </div>
+       <div>
+        <h2>Цвет sharika:</h2>
+        <input type="color" id="ball_color" value="lawngreen" class="color">
+       </div>
+ 
+        </div>
+        <button class="btn" onclick="optiongame()">Start Game</button>
+    </div>
+   
+
+    <div class="win" id="win">
+        <div>
+        <h1>Ты выиграл!!</h1>
+        <h2 id="count">Счёт: 00</h2>
+        <button class="btn" onclick="back_menu()">Back to menu</button>
+        </div>
+        
+    </div>
+    <div class="lose" id="lose">
+        <div>
+        <h1>Ты проиграл(((((</h1>
+        <h2 id="countL">Счёт: 00</h2>
+        <button class="btn" onclick="back_menu()">Back to menu</button>
+        </div>
+
+    </div>
+
+    <canvas width="1200" height="750" id="game"></canvas>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
